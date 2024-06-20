@@ -1,18 +1,17 @@
-<!-- templates/result.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado da Comparação</title>
 </head>
 <body>
-    <h1>Resultado da Comparação</h1>
-    <p>O relatório de diferenças foi gerado com sucesso.</p>
-    <a href="{{ url_for('uploaded_file', filename=filename) }}">Baixar Relatório de Diferenças</a><br><br>
+    <h1>Comparação Concluída</h1>
+    <p>O relatório das diferenças foi gerado.</p>
+    <a href="/uploads/relatorio_diferencas.docx" download="relatorio_diferencas.docx">Baixar Relatório</a>
     <form method="post">
         <button type="submit" name="new_upload">Enviar Novos Arquivos</button>
-        <button type="submit" name="shutdown">Encerrar Programa</button>
+        <button type="submit" name="shutdown">Encerrar Servidor</button>
     </form>
 </body>
 </html>
